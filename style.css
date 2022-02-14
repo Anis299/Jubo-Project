@@ -1,0 +1,325 @@
+/* Theme Name: Jubo Project
+Version: 1.2.1
+Theme URI: www.juboproject.com
+Author: Anis
+Author URI: www.anis.com
+Description: Jubo Project Theme is one kind of Pro Theme.
+Tags: responsive, corporate, theme, */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+    
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+	margin: 0px;
+    padding: 0px;
+	text-align: center;
+    background: #f2f2f2;
+}
+
+
+Header Section Start Here
+
+header{
+	width: 100%;
+}
+
+.top-header{
+	width: 100%;
+	background-color: #105884;
+	height: 50px;
+}
+
+.contact{
+	float: left;
+	margin-bottom: 5px;
+}
+
+ul{
+	list-style: none;
+
+}
+
+ul li{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.text-white{
+	color: white;
+}
+
+.social{
+	float: right;
+	margin-right: 30px;
+}
+
+.navigation-menu{
+
+	width: 100%;
+	height: 90px;
+	background-color: #247aae; 
+}
+
+.logo{
+	float: left;
+	margin-right: auto;
+	margin-left: 30px;
+}
+
+.menu{
+	float: right;
+	margin-right: 20px;
+}
+
+.clear{
+	clear: both;
+}
+
+.menu ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 15px;
+}
+
+/*Header Section End Here*/
+
+
+
+.banner img{
+    width: 100%;
+}
+
+
+
+
+/*Service Section Start Here*/
+
+
+.service-section{
+
+}
+
+.service-title h2{
+	color: #105884;
+	font-size: 60px;
+}
+
+.wrapper {
+    display: grid;
+    margin: 70px 30px auto;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+@media (max-width: 700px) {
+    .wrapper {
+        margin: 200px auto;
+    }
+}
+
+.wrapper .box {
+    width: 350px;
+    margin: 0 auto;
+    position: relative;
+    perspective: 1000px;
+}
+
+.wrapper .box .front-face {
+    background: #fff;
+    height: 220px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+    transition: all 0.5s ease;
+    border-width: 3px;
+  	border-style: solid;
+    border-image: linear-gradient(to bottom, #105884, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.box .front-face .icon {
+    height: 80px;
+}
+
+.box .front-face .icon i {
+    font-size: 65px;
+}
+
+.box .front-face span,
+.box .back-face span {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .front-face .icon i,
+.box .front-face span {
+    background: linear-gradient(-135deg, #105884, #247aae);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box .back-face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 220px;
+    width: 100%;
+    padding: 30px;
+    color: #fff;
+    opacity: 0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    background: linear-gradient(-135deg, #105884, #247aae);
+    transform: translateY(110px) rotateX(-90deg);
+    box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+    transition: all 0.5s ease;
+}
+
+.box .back-face p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.box:hover .back-face {
+    opacity: 1;
+    transform: rotateX(0deg);
+}
+
+.box:hover .front-face {
+    opacity: 0;
+    transform: translateY(-110px) rotateX(90deg);
+}
+
+
+/*Service Section End Here*/
+
+
+.body-area{
+    display: inline-block;
+}
+
+.post-section{
+    width: 59%;
+    margin-top: 100px;
+    margin-left: 5%;
+    float: left;
+    clear: both;
+    border: 1px solid #dbd8d8;
+    box-shadow: 1px 15px 5px 2px #dbd8d8;
+}
+
+.post-title{
+    color: #105884;
+    font-size: 40px;
+}
+
+.single-post{
+    width: 100%;
+    padding: 30px;
+    display: inline-block;
+}
+
+.single-post img{
+
+width: 300px;
+float: left;
+border-radius: 5px;
+padding: 10px;
+
+}
+
+.single-post h2{
+
+font-size: 25px;
+text-align: justify !important;
+color: #247aae;
+
+}
+
+.single-post p{
+    font-size: 15px;
+    text-align: justify !important;
+}
+
+.single-post a{
+    background-color: #247aae;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    float: left;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.single-post a:hover{
+    background-color: #105884;
+}
+
+aside{
+    width: 30%;
+    margin-top: 100px;
+    margin-right: 5%;
+    margin-left: 1%;
+    border: 1px solid gray;
+    float: right;
+    border: 1px solid #dbd8d8;
+    box-shadow: 1px 15px 5px 2px #dbd8d8;
+}
+
+.inspire{
+    font-size: 40px;
+    color: #105884;
+}
+
+.main-image{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dbd8d8;
+   
+}
+
+.main-image img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main-image h2{
+    font-size: 25px;
+    color: #247aae;
+    margin: 0px;
+}
+
+.main-image p{
+    font-size: 18px;
+    margin: 5px 0px;
+}
+
+.sidebar-social li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+.icon{
+    font-size: 25px;
+    color: #247aae;
+}
+
+footer{
+    background-color: #247aae; 
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    
+}
+
